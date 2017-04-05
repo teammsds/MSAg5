@@ -17,7 +17,8 @@ class Foulcontroller extends Controller
     {
         //
         $players = Player::lists('p_fname','id');
-        return view('referees.fouls', compact('players'));
+        $matches = Match::lists('m_number','id');
+        return view('referees.fouls', compact('players','matches'));
     }
 
     public function store(Request $request)
