@@ -40,7 +40,7 @@
                         <li><a href="{{ url('/users') }}"><i class="fa fa-btn fa-fw fa-user"></i>Users</a></li>
                         <li><a href="{{ url('/roles') }}"><i class="fa fa-btn fa-fw fa-users"></i>Roles</a></li>
                         <li><a href="{{ action('SchoolController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Schools</a></li>
-                        <li><a href="{{ action('TeamController@index') }}"><i class="fa fa-btn fa-fw fa-users"></i>Teams & Coaches</a></li>
+                        <li><a href="#"><i class="fa fa-btn fa-fw fa-users"></i>Teams & Coaches</a></li>
                         <li><a href="{{ action('PlayerController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>Players</a></li>
 
                         <li><a href="{{ action('PlayerController@index') }}"><i class="fa fa-btn fa-fw fa-user"></i>Coaches</a></li>
@@ -50,7 +50,7 @@
                         <li><a href="{{ action('RefereeController@index') }}"><i class="fa fa-btn fa-fw fa-graduation-cap" ></i>Referees</a></li>
 
 
-                        <li><a href="{{ action('FieldController@index') }}"><i class="fa fa-btn fa-fw fa-map-marker"></i>Fields</a>
+                       
 
                        
                         {{--<li class="divider"></li>--}}
