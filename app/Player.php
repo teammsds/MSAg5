@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Player extends Model
 {
     protected $fillable=[
+        'user_id',
         'p_number',
         'p_lname',
         'p_fname',
@@ -37,4 +38,9 @@ class Player extends Model
 
     }
     //
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+
 }

@@ -15,6 +15,7 @@ class CreatePlayersTable extends Migration
         {
             Schema::create('players', function (Blueprint $table) {
                 $table->increments('id');
+                $table->integer('user_id')->unsigned();
                 $table->integer('p_number');
                 $table->string('p_lname');
                 $table->string('p_fname');
@@ -36,6 +37,10 @@ class CreatePlayersTable extends Migration
 
             Schema::table('players', function (Blueprint $table) {
                 $table->foreign('school_id')->references('id')->on('schools')->onDelete('cascade');
+            });
+
+            Schema::table('players', function (Blueprint $table) {
+                $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             });
         }
         //

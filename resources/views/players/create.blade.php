@@ -7,7 +7,10 @@
 <h3> New Player</h3>
     {!! Form::open(['url' => 'players']) !!}
 
-    
+                    <div class="form-group">
+                        {!! Form::Label('user', 'Select User Email') !!}<br>
+                        {!! Form::select('user_id', $users) !!}
+                    </div>
     <div class="form-group">
 
         {!! Form::Label('school', 'Select School') !!}<br>
@@ -16,7 +19,7 @@
     </div>
     
     <div class="form-group">
-        {!! Form::Label('school', 'Select Team') !!}<br>
+        {!! Form::Label('team', 'Select Team') !!}<br>
         {!! Form::select('team_id', $teams) !!}
     </div>
     <div class="form-group">
@@ -47,10 +50,7 @@
         {!! Form::label('p_zip', 'Zip') !!}
         {!! Form::text('p_zip',null,['class'=>'form-control']) !!}
     </div>
-    <div class="form-group">
-        {!! Form::label('p_email', 'E-mail') !!}
-        {!! Form::text('p_email',null,['class'=>'form-control']) !!}
-    </div>
+
     <div class="form-group">
         {!! Form::label('p_phone', 'Phone') !!}
         {!! Form::text('p_phone',null,['class'=>'form-control']) !!}

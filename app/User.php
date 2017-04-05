@@ -74,9 +74,5 @@ class User extends Authenticatable
         return $this->active;
     }
 
-    public function user()
-    {
-        return $this->hasMany('App\User');
 
-    }
 }

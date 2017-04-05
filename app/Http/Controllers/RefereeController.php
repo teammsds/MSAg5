@@ -38,7 +38,7 @@ class RefereeController extends Controller
     public function store(Request $request)
     {
         $referee= new Referee($request->all());
-        $referee['r_email'] = $request['user_id'];
+        $referee['user_id'] = $request['user_id'];
         $referee['r_number']=$request['r_number'];
         $referee['r_lname']=$request['r_lname'];
         $referee['r_fname']=$request['r_fname'];

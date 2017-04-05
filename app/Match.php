@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Match extends Model
 {
     protected $fillable=[
+        'user_id',
         'm_number',
         'm_time',
         'm_date',

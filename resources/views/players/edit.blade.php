@@ -31,10 +31,6 @@
         {!! Form::text('p_zip',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-        {!! Form::label('p_email', 'Player Email Address:') !!}
-        {!! Form::text('p_email',null,['class'=>'form-control']) !!}
-    </div>
-    <div class="form-group">
         {!! Form::label('p_phone', 'Player Phone No:') !!}
         {!! Form::text('p_phone',null,['class'=>'form-control']) !!}
     </div>

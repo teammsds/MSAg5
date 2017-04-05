@@ -9,6 +9,7 @@ use App\Player;
 use App\School;
 use App\Team;
 use App\Foul;
+use App\Match;
 class Foulcontroller extends Controller
 
 {

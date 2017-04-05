@@ -27,8 +27,10 @@ Route::resource('tournaments','TournamentController');
 Route::resource('schools','SchoolController');
 Route::resource('teams','TeamController');
 Route::resource('players','PlayerController');
+Route::resource('fouls','FoulController');
 Route::resource('referees','RefereeController');
-Route::resource('mymatches','RefereematchController');
+Route::resource('refereematches','RefereematchController');
+Route::resource('mymatches','PlayermatchController');
 Route::get('matches/detail/{id}','MatchController@detail');
 Route::get('players/detail/{id}','PlayerController@detail');
     //

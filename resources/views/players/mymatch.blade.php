@@ -11,7 +11,7 @@
             </thead>
             <tbody style="background-color: darkseagreen">
             <tr class="bg-info">
-                @foreach ($referee->matches as $match)
+                @foreach ($team->matches as $match)
                     <tr>
                     <td>{{ $match->m_number}}</td>
                     <td>{{$match->tournament->to_name}}</td>
